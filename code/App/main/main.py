@@ -3,7 +3,7 @@ from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
 
-class TestApp(App):
+class main(App):
     def build(self):
         box = BoxLayout(orientation='vertical')
         button1 = Button(text='Button1')
@@ -12,4 +12,4 @@ class TestApp(App):
         box.add_widget(label1)
         return box
 
-TestApp().run()
+main().run()
