@@ -1,10 +1,26 @@
 <Adicionador>:
-    orientation:'vertical'
-    Button:
-        text: 'Adicionar'
-        font_size:30
-        on_release:label.text = str(int(label.text)+1)
-    Label:
-        id:label
-        text:'1'
-        font_size:30
+    BoxLayout:
+        minimum_width: 400
+        minimum_height:500
+        orientation: 'vertical'
+        size: root.width - 200, root.height - 200
+        padding: 0, 100
+        BoxLayout:
+            Label:
+                text: 'Interface' 
+                font_size: 40
+        BoxLayout:
+            Label:
+                text:'Name:'
+                font_size: 35
+            TextInput:
+                multinline: False
+        BoxLayout:
+            Label:
+                text:'E-mail'
+                font_size: 35
+            TextInput:
+                multinline: False
+        Button:
+            text: 'Submit'
+            font_size: 35
