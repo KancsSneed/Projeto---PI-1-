@@ -7,7 +7,7 @@ class Tarefas(ScrollView):
     def __init__(self, tarefas,**kwargs):
         super().__init__(**kwargs)
         for tarefa in tarefas:
-            self.ids.box.add_widget(Tarefa(text=tarefa))
+            #self.ids.box.add_widget()
 class Tarefa(BoxLayout):
     def __init__(self,tarefas,text='', **kwargs):
         super().__init__(**kwargs)
